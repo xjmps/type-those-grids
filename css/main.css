@@ -1,4 +1,4 @@
-html  {
+html {
   box-sizing: border-box;
 }
 
@@ -6,6 +6,18 @@ html  {
   box-sizing: inherit;
 }
 
-img  {
+img {
   width: 100%
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "banner banner banner"
+  "col1 col2 col3";
+}
+
+.banner {
+  grid-area: banner;
 }
